@@ -58,10 +58,12 @@ textarea {
  *
  * 2 - Also avoid overflowing.
  */
+canvas,
+iframe,
 img,
 picture,
-canvas,
-svg {
+svg,
+video {
   display: block; // 1
   max-width: 100%; // 2
 }
@@ -72,6 +74,21 @@ svg {
 ul,
 ol {
   list-style: none;
+}
+
+/**
+ * Break long words/strings to stop text from overflowing
+*/
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /**
@@ -107,7 +124,7 @@ ol {
  *
  * Ref: https://css-tricks.com/comparing-various-ways-to-hide-things-in-css/
  */
-.hidden {
+%hidden {
   /* Removes element from normal document flow */
   position: absolute;
   /* Some screen readers ignores element with 0px height/width, so set it to
@@ -123,6 +140,10 @@ ol {
   border: 0;
 }
 
+.hidden {
+  @extend %hidden;
+}
+
 .visually-hidden:not(:focus):not(:active) {
-  @extend .hidden;
+  @extend %hidden;
 }
