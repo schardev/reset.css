@@ -1,6 +1,6 @@
 {
   "name": "@saurabhcharde/reset.css",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Blazingly fast CSS reset",
   "style": "reset.min.css",
   "main": "reset..min.css",
@@ -25,7 +25,7 @@
   "author": "Saurabh Charde <saurabhchardereal@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "sass": "^1.54.9"
+    "sass": "^1.57.1"
   },
   "prettier": {
     "printWidth": 80,
