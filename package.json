@@ -1,6 +1,6 @@
 {
   "name": "@saurabhcharde/reset.css",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Blazingly fast CSS reset",
   "style": "reset.min.css",
   "main": "reset..min.css",

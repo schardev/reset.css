@@ -53,6 +53,16 @@ textarea {
 }
 
 /**
+ * Clickable elements should indicate it properly via cursor
+ */
+button,
+select,
+summary,
+[role="button"] {
+  cursor: pointer;
+}
+
+/**
  * 1 - Images are `inline` by default even though most of the time the usecase will
  * expect them to behave as `block`. Set it as `block` to avoid the hassel.
  *
